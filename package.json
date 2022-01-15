@@ -1,0 +1,31 @@
+{
+  "name": "vk-message-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build & node server",
+    "dev": "ts-node-dev src/index.ts",
+    "build": "tsc --project tsconfig.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.95.14",
+    "puppeteer": "^10.1.0",
+    "sqlite3": "^5.0.2",
+    "vk-io": "^4.1.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.12",
+    "@types/node": "^15.12.2",
+    "dotenv": "^8.2.0",
+    "https-proxy-agent": "^5.0.0",
+    "ts-node": "^10.0.0",
+    "ts-node-dev": "^1.1.8",
+    "tslib": "^2.3.0"
+  }
+}
